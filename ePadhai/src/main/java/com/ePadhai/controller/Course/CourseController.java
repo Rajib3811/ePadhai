@@ -10,5 +10,5 @@ public class CourseController {
 	public String course() {
 		return "course";
 	}
-
+	
 }
