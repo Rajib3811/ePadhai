@@ -99,7 +99,7 @@ public class VideoService {
     }
 
     public Video getVideoById(Long id){
-        return videoRepository.findById(id).orElseThrow();
+        return videoRepository.findById(id).orElseThrow(()-> new RuntimeException("Video Not Found!!!"));
     }
 
     public List<Video> getAllVideos(){
